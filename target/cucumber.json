@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-11T07:39:24.344Z",
+        "start_timestamp": "2021-06-12T03:32:59.629Z",
         "before": [
           {
             "result": {
-              "duration": 942000000,
+              "duration": 430000000,
               "status": "passed"
             },
             "match": {
@@ -15,10 +15,10 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Adding new product to an existing vendor",
+        "line": 3,
+        "name": "Add a photo",
         "description": "",
-        "id": "add-a-new-product-for-an-existing-vendor;adding-new-product-to-an-existing-vendor",
+        "id": "add-a-photo;add-a-photo",
         "after": [
           {
             "result": {
@@ -34,54 +34,53 @@
         "steps": [
           {
             "result": {
-              "duration": 5270000000,
+              "duration": 2922000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user has chosen a vendor",
+            "name": "user is able to add a photo",
             "match": {
-              "location": "com.fruitShop.step_definitions.AddingAProductToExistingVendor.user_has_chosen_a_vendor()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.ClassCastException: java.lang.String cannot be cast to io.restassured.path.json.JsonPath\r\n\tat com.fruitShop.step_definitions.AddingAProductToExistingVendor.user_adds_a_product_to_chosen_existing_vendor(AddingAProductToExistingVendor.java:49)\r\n\tat ✽.user adds a product to chosen existing vendor(file:///C:/Users/hosha/IdeaProjects/FruitShopAPI/src/test/resources/features/gettingAllVendors.feature:6)\r\n",
-              "duration": 2241000000,
-              "status": "failed"
-            },
-            "line": 6,
-            "name": "user adds a product to chosen existing vendor",
-            "match": {
-              "location": "com.fruitShop.step_definitions.AddingAProductToExistingVendor.user_adds_a_product_to_chosen_existing_vendor()"
+              "location": "com.fruitShop.step_definitions.addPhoto_stepDefinitions.user_is_able_to_add_a_photo()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 642000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is display the photo",
+            "match": {
+              "location": "com.fruitShop.step_definitions.addPhoto_stepDefinitions.user_is_display_the_photo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
               "duration": 1000000,
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 7,
-            "name": "user should see the added product",
+            "name": "verify the photo",
             "match": {
-              "location": "com.fruitShop.step_definitions.AddingAProductToExistingVendor.user_should_see_the_added_product()"
+              "location": "com.fruitShop.step_definitions.addPhoto_stepDefinitions.verify_the_photo()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AddingNewProduct"
+            "name": "@photo"
           }
         ]
       }
     ],
-    "name": "Add a new product for an existing vendor",
+    "name": "Add a photo",
     "description": "",
-    "id": "add-a-new-product-for-an-existing-vendor",
+    "id": "add-a-photo",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/gettingAllVendors.feature",
+    "uri": "file:src/test/resources/features/addPhoto.feature",
     "tags": []
   }
 ]

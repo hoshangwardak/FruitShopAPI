@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-06-12T03:32:59.629Z",
+        "start_timestamp": "2021-06-27T00:58:06.791Z",
         "before": [
           {
             "result": {
-              "duration": 430000000,
+              "duration": 467000000,
               "status": "passed"
             },
             "match": {
@@ -15,10 +15,10 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Add a photo",
+        "line": 5,
+        "name": "",
         "description": "",
-        "id": "add-a-photo;add-a-photo",
+        "id": "add-new-product;",
         "after": [
           {
             "result": {
@@ -34,53 +34,134 @@
         "steps": [
           {
             "result": {
-              "duration": 2922000000,
+              "duration": 2775000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user is able to add a photo",
+            "line": 6,
+            "name": "create a vendor for the product",
             "match": {
-              "location": "com.fruitShop.step_definitions.addPhoto_stepDefinitions.user_is_able_to_add_a_photo()"
+              "location": "com.fruitShop.step_definitions.addProduct_stepDefinitions.create_a_vendor_for_the_product()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 642000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user is display the photo",
-            "match": {
-              "location": "com.fruitShop.step_definitions.addPhoto_stepDefinitions.user_is_display_the_photo()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
+              "duration": 883000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "verify the photo",
+            "name": "user add a new product",
             "match": {
-              "location": "com.fruitShop.step_definitions.addPhoto_stepDefinitions.verify_the_photo()"
+              "location": "com.fruitShop.step_definitions.addProduct_stepDefinitions.user_add_a_new_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1332000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is able to verify the new",
+            "match": {
+              "location": "com.fruitShop.step_definitions.addProduct_stepDefinitions.user_is_able_to_verify_the_new()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@photo"
+            "name": "@new"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-27T00:58:12.313Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.fruitShop.step_definitions.Hooks.fruitShopInitializer()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "user is able to update a name and a price of the fruit",
+        "description": "",
+        "id": "add-new-product;user-is-able-to-update-a-name-and-a-price-of-the-fruit",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.fruitShop.step_definitions.Hooks.cleanUpFruitShop()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 711000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is update a  name and a price",
+            "match": {
+              "location": "com.fruitShop.step_definitions.addProduct_stepDefinitions.user_is_update_a_name_and_a_price()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 683000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is able to verify the updated name and a price",
+            "match": {
+              "location": "com.fruitShop.step_definitions.addProduct_stepDefinitions.user_is_able_to_verify_the_updated_name_and_a_price()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9276000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "list the product",
+            "match": {
+              "location": "com.fruitShop.step_definitions.addProduct_stepDefinitions.list_the_product()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new"
           }
         ]
       }
     ],
-    "name": "Add a photo",
+    "name": "add new product",
     "description": "",
-    "id": "add-a-photo",
+    "id": "add-new-product",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/addPhoto.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/add.feature",
+    "tags": [
+      {
+        "name": "@new",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

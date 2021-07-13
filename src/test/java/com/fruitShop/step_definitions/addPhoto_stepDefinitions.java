@@ -19,7 +19,7 @@ public class addPhoto_stepDefinitions {
         ValidatableResponse response = given()
                 .log().all()
 
-                .pathParam("id", 126)
+                .pathParam("id", 202)
                 .multiPart(new File("/Users/minibae/Desktop/Screen Shot 2021-04-02 at 1.42.58 PM.png"))
 
                 .when()
@@ -27,7 +27,7 @@ public class addPhoto_stepDefinitions {
                 .then()
                 .statusCode(201);
        photo_url = response.extract().jsonPath().getString("photo_url");
-        Assert.assertTrue(photo_url.contains("126"));
+        Assert.assertTrue(photo_url.contains("202"));
 
 
 
@@ -39,7 +39,7 @@ public class addPhoto_stepDefinitions {
     public void user_is_display_the_photo() {
 given()
         .accept(ContentType.JSON)
-        .pathParam("id",126)
+        .pathParam("id",202)
         .when()
         .get("/products/{id}/photo")
         .then()

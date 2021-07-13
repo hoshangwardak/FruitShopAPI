@@ -1,3 +1,4 @@
+@smoke
 Feature: Add a new product for an existing vendor
 
 @AddingNewProduct

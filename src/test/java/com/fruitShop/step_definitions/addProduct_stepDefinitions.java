@@ -176,7 +176,7 @@ addProduct.put("name","fruit of the holy spirit");
         bodyMap.put("name",faker.food().fruit());
         bodyMap.put("price",faker.number().randomDouble(2,1,100000));
         bodyMap.put("category_url","/shop/categories/Fruits");
-        bodyMap.put("vendor_url","/shop/vendors/"+835);
+        bodyMap.put("vendor_url","/shop/vendors/"+819);
 
         return bodyMap ;
 
@@ -192,7 +192,7 @@ addProduct.put("name","fruit of the holy spirit");
             "  \"category_url\": \"/shop/categories/Fruits\",\n" +
             "  \"vendor_url\": \"/shop/vendors/672\"\n" +
             "}";
-ProductPojo bodyPojo=new ProductPojo("mini Fruit",100.99,"/shop/categories/Fruits","/shop/vendors/844");
+ProductPojo bodyPojo=new ProductPojo("mini Fruit",100.99,"/shop/categories/Fruits","/shop/vendors/819");
 
    //   Map<String,Object>updatedBody=ProductPojo.getRandomUpdatedBody();
 
@@ -212,7 +212,7 @@ ProductPojo bodyPojo=new ProductPojo("mini Fruit",100.99,"/shop/categories/Fruit
                 .log().all()
                 .contentType(JSON).
                         body(bodyPojo).
-                        pathParam("id", 123).
+                        pathParam("id", 202).
                         when()
                 .put("/products/{id}").
                         then().statusCode(200).extract()
@@ -237,7 +237,7 @@ ProductPojo bodyPojo=new ProductPojo("mini Fruit",100.99,"/shop/categories/Fruit
         JsonPath js = given().
                 log().all().
                 accept(JSON).
-                pathParam("id", 123).
+                pathParam("id", 202).
                 when().
                 get("/products/{id}").
                 then().extract().jsonPath();

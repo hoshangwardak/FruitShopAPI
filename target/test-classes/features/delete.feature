@@ -1,3 +1,4 @@
+@smoke
 Feature: delete the product
 @delete
   Scenario: user is able to delete the product

@@ -1,3 +1,4 @@
+@smoke
 Feature: Add a photo
 @photo
   Scenario: Add a photo
